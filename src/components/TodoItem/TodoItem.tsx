@@ -15,11 +15,11 @@ const TodoItem: React.FC<IProps> = ({
   EditItemHandler,
   EditItemText,
 }) => {
-  const [text, setText] = useState<string>('');
+  const [text, setText] = useState<string>(todoItem.text);
   return (
     <div className={styles.todo} onClick={() => console.log(todoItem)}>
       {todoItem.edit ? (
-        <input type='text' onChange={(e: any) => setText(e.target.value)} />
+        <input type='text' value={text} onChange={(e: any) => setText(e.target.value)} />
       ) : (
         <li>{todoItem.text}</li>
       )}
