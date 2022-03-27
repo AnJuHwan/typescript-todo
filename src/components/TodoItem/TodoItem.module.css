@@ -1,0 +1,12 @@
+.todo {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid grey;
+  border-radius: 15px;
+  justify-content: space-between;
+  padding: 10px;
+  
+}
+.todo li {
+  list-style: none;
+}
